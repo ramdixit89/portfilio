@@ -1,0 +1,133 @@
+.nav-hover {
+  position: relative;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.nav-hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  width: 0%;
+  height: 2px;
+  background-color: #0d6efd; /* Bootstrap Primary */
+  transition: 0.3s ease-in-out;
+}
+
+.nav-hover:hover {
+  color: #0d6efd;
+}
+
+.nav-hover:hover::after {
+  width: 90%;
+}
+/* Skills css */
+/* Add some vertical spacing to sections */
+#skills {
+  scroll-margin-top: 80px;
+}
+.text-purple {
+  color: #6f42c1;
+}
+/* Background for skill section handled inline */
+
+.skill-card {
+  background: #1e293b;
+  color: #ffffff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+.icon-glow {
+  transition: transform 0.3s;
+}
+
+.skill-card:hover .icon-glow {
+  transform: scale(1.2);
+}
+
+/* Custom icon colors */
+.text-html { color: #e44d26; }
+.text-css { color: #2965f1; }
+.text-js { color: #f7df1e; }
+.text-bootstrap { color: #563d7c; }
+.text-react { color: #61dafb; }
+.text-node { color: #68a063; }
+.text-db { color: #6c757d; }
+.text-express { color: #ffffff; }
+.text-postman { color: #ff6c37; }
+.text-jwt { color: #33b5e5; }
+.text-git { color: #f1502f; }
+.text-mysql { color: #00758f; }
+
+/* Projects CSS */
+.project-img {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-bottom: 2px solid #0d6efd;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.05);
+}
+/* Contacts */
+#contact h2 {
+  font-weight: 600;
+}
+
+#contact .form-control:focus {
+  box-shadow: none;
+  border-color: #0d6efd;
+}
+
+#contact .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004a99;
+  transition: 0.3s ease-in-out;
+}
+
+#contact .row div {
+  transition: transform 0.3s ease-in-out;
+}
+#contact .row div:hover {
+  transform: translateY(-3px);
+}
+/* about */
+#about {
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf5);
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+#about img {
+  transition: transform 0.3s ease-in-out;
+}
+
+#about img:hover {
+  transform: scale(1.03);
+}
+/* Home */
+#home .btn:hover {
+  background-color: #ffc107;
+  color: #000;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+#home h1, #home h3 {
+  transition: transform 0.3s ease;
+}
+
+#home h1:hover, #home h3:hover {
+  transform: scale(1.02);
+}
