@@ -8,6 +8,8 @@ import grandBazar from '../assets/img/grandbazar.PNG';
 import E_commImg from '../assets/img/E-comm.PNG';
 import reduxImg from '../assets/img/project-2-Redux.PNG';
 import e_comm from '../assets/img/project-3-shoppingCart.PNG';
+import insight from '../assets/img/inshightfull.PNG';
+import saree from '../assets/img/saree.PNG';
 function Projects() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -28,6 +30,16 @@ function Projects() {
       title: 'E-commerce',
       img: E_commImg,
       url: 'https://reactjs-e-commerce.onrender.com/',
+    },
+    {
+       title: 'Insightfull Architect',
+       img: insight,
+       url: 'https://insightfularchitect.netlify.app/'
+    },
+    {
+        title: 'Saree',
+        img: saree,
+        url: 'https://saree-ecom.netlify.app/'
     },
     {
       title: 'Redux Store',
